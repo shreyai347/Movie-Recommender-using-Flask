@@ -4,8 +4,8 @@
 
 # 🎬 Movie Recommendation System 🍿
 
-![Screenshot 2024-09-28 172425](https://github.com/user-attachments/assets/2a146abd-8753-425e-8eb4-b2ef8fe90532)
 ![Screenshot (82)](https://github.com/user-attachments/assets/fd8c0f83-df24-4661-990f-86ac24355649)
+![Screenshot 2024-09-28 172425](https://github.com/user-attachments/assets/2a146abd-8753-425e-8eb4-b2ef8fe90532)
 ![Screenshot 2024-09-28 163759](https://github.com/user-attachments/assets/07b17643-3e93-4596-8951-8fe03b6c60ec)
 
 ## Table of Contents
