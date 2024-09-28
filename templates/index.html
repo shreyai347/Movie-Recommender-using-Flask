@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation 🍿🎬</title>
+    <style>
+        body {
+            background-color: #17202a;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            font-family: Papyrus, Fantasy;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 60px;
+            font-weight: bold;
+            color: #f39c12;
+            border: 0px solid #cc9900;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center align elements */
+        }
+        label {
+            display: none; /* Hide the label */
+        }
+        input[type="text"] {
+            padding: 20px;
+            font-size: 18px;
+            width: 800px;
+            border: 0px solid #e01fe0;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+        input[type="submit"] {
+            font-family: Papyrus, Fantasy;
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 100px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie Recommender 🍿🎬</h1>
+    <form action="/recommend" method="POST">
+        <label for="movie_name">Enter Movie Name:</label> <!-- This label is hidden -->
+        <input type="text" id="movie_name" name="movie_name" list="movie-list" placeholder="Type or select a movie" required>
+        <datalist id="movie-list">
+            <!-- Populate options dynamically with your movie titles -->
+            {% for movie in movie_list %}
+                <option value="{{ movie }}">{{ movie }}</option>
+            {% endfor %}
+        </datalist>
+        <br><br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>
