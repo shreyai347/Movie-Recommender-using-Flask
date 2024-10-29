@@ -41,7 +41,8 @@ def fetch_poster(movie_name):
 
 import os
 
-# Add this function to your app.py file
+
+
 def fetch_trailer(movie_name):
     api_key = "AIzaSyB6UOdwd0mXFKa58fFk3s7hBFgeQlW0jJc"  # Your YouTube Data API key
     search_url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&q={movie_name} trailer&key={api_key}"
